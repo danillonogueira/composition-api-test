@@ -1,11 +1,11 @@
 <template>
-  <div class="container p-4">
+  <div class="container py-4">
     <div class="row">
       <div class="col-12 text-center">
         <h1 class="text-info">Fill out a note to have the time of your liiiiiife! :)</h1>
       </div>
     </div>
-    <div class="row my-4">
+    <div class="row">
       <div class="col-lg-12">
         <form>
           <div class="form-group">
@@ -22,9 +22,10 @@
         </form>
       </div>
     </div>
-    <div class="row my-4 d-flex justify-content-center">
-      <div class="col-lg-4">
-        <div class="card my-2" style="width: 100%;">
+    <hr />
+    <div class="row d-flex justify-content-center">
+      <div class="col-lg-4 py-2">
+        <div class="card" style="width: 100%;">
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
             <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
@@ -34,8 +35,8 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-4">
-        <div class="card my-2" style="width: 100%;">
+      <div class="col-lg-4 py-2">
+        <div class="card" style="width: 100%;">
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
             <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
@@ -45,8 +46,8 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-4">
-        <div class="card my-2" style="width: 100%;">
+      <div class="col-lg-4 py-2">
+        <div class="card" style="width: 100%;">
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
             <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
@@ -56,8 +57,8 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-4">
-        <div class="card my-2" style="width: 100%;">
+      <div class="col-lg-4 py-2">
+        <div class="card" style="width: 100%;">
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
             <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
@@ -67,8 +68,8 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-4">
-        <div class="card my-2" style="width: 100%;">
+      <div class="col-lg-4 py-2">
+        <div class="card" style="width: 100%;">
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
             <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
@@ -78,8 +79,8 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-4">
-        <div class="card my-2" style="width: 100%;">
+      <div class="col-lg-4 py-2">
+        <div class="card" style="width: 100%;">
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
             <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
