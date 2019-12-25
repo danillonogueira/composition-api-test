@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <home></home>
+    <Home></Home>
   </div>
 </template>
 
@@ -10,7 +10,7 @@ import Home from './views/Home';
 export default {
   name: 'app',
   components: {
-    'home': Home
+    Home
   }
 }
 </script>
