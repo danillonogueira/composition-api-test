@@ -23,5 +23,4 @@
   .card-width {
     width: 100%;
   }
-
 </style>

@@ -22,10 +22,7 @@
 
 <script>
   export default {
-    name: 'search-bar',
-    setup() {
-      
-    }
+    name: 'search-bar'
   }
 </script>
 
@@ -34,5 +31,4 @@
     width: 16px;
     height: 16px;
   }
-
 </style>
