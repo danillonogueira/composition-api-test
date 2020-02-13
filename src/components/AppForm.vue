@@ -5,15 +5,15 @@
         <form>
           <div class="form-group">
             <label>Title</label>
-            <input type="text" class="form-control" />
+            <input v-model="form.title" type="text" class="form-control" />
             <small class="form-text text-muted">Every good note gotta have a big nice title, aye?</small>
           </div>
           <div class="form-group">
             <label>Note</label>
-            <textarea class="form-control" rows="4"></textarea>
+            <textarea v-model="form.text" class="form-control" rows="4"></textarea>
             <small class="form-text text-muted">Every good note gotta have the note itself, ammmk?!</small>
           </div>
-          <button @click.prevent="" class="btn btn-primary">JOT DOWN!</button>
+          <button @click.prevent="addNote({ title: form.title, text: form.text })" class="btn btn-primary">JOT DOWN!</button>
         </form>
       </div>
     </div>
@@ -21,8 +21,25 @@
 </template>
 
 <script>
+  import { reactive } from '@vue/composition-api';
+
   export default {
-    name: 'app-form'
+    name: 'app-form',
+    props: {
+      addNote: {
+        type: Function,
+        required: true
+      }
+    },
+    setup() {
+      const form = reactive({
+        title: '',
+        text: ''
+      });
+
+      return { 
+        form
+      };
+    }
   }
 </script>
-
