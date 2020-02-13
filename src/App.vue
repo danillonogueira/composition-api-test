@@ -4,7 +4,7 @@
     <app-form :addNote="addNote"></app-form>
     <hr />
     <search-bar></search-bar>
-    <display :notesArr="notes"></display>
+    <display :notes="notes"></display>
   </div>
 </template>
 

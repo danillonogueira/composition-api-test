@@ -3,7 +3,7 @@
     <hr />
     <div class="row">
       <card 
-        v-for="(note, index) in notesArr" 
+        v-for="(note, index) in notes" 
         :key="index + 1"
       >
         <template v-slot:title>{{ note.title }}</template>
@@ -22,7 +22,7 @@
       Card
     },
     props: {
-      notesArr: {
+      notes: {
         type: Array,
         required: true
       }

@@ -37,9 +37,7 @@
         text: ''
       });
 
-      return { 
-        form
-      };
+      return { form };
     }
   }
 </script>
