@@ -1,6 +1,6 @@
 # Composition API Test
 
-## Aim
+### Aim
 A tiny project for trying Vue 3 [Composition API](https://vue-composition-api-rfc.netlify.com/).
 
 ### Technologies
