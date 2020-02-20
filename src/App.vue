@@ -3,7 +3,6 @@
     <app-header></app-header>
     <app-form :addNote="addNote"></app-form>
     <hr />
-    <search-bar></search-bar>
     <display :notes="notes"></display>
   </div>
 </template>
@@ -12,7 +11,6 @@
   import AppForm from './components/AppForm';
   import AppHeader from './components/AppHeader';
   import Display from './components/Display';
-  import SearchBar from './components/SearchBar';
   import { ref } from '@vue/composition-api';
 
   export default {
@@ -21,12 +19,16 @@
       AppForm,
       AppHeader,
       Display,
-      SearchBar
     },
     setup() {
       const notes = ref([]);
-      const addNote = (obj) => {
-        notes.value.push(obj);
+      const addNote = (title, text) => {
+        if (title && text) {
+          notes.value.push({
+            title,
+            text
+          });
+        } 
       };
 
       return { 
