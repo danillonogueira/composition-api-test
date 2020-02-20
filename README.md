@@ -1,24 +1,28 @@
-# composition-api-test
+# Composition API Test
 
-## Project setup
-```
-npm install
-```
+## Aim
+A tiny project for trying Vue 3 [Composition API](https://vue-composition-api-rfc.netlify.com/).
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+### Technologies
+* JavaScript
+* [Vue](https://vuejs.org/)
+* [Composition API](https://vue-composition-api-rfc.netlify.com/)
+* [Bootstrap](https://getbootstrap.com/)
 
-### Compiles and minifies for production
-```
-npm run build
-```
+### Requirements
+[Node.js](https://nodejs.org/en/)
 
-### Lints and fixes files
+### Running the project
+1. Navigate to project directory;
+2. Install dependencies;
 ```
-npm run lint
+$ npm install
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+3. Run the project.
+```
+$ npm run serve
+```
+### Building
+```
+$ npm run build
+```
