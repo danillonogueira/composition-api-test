@@ -1,7 +1,10 @@
 <template>
   <div id="app" class="container py-4">
     <app-header></app-header>
-    <app-form :addNote="addNote"></app-form>
+    <app-form 
+      :addNote="addNote"
+      v-on:wipe="wipe()"
+    ></app-form>
     <hr />
     <display :notes="notes"></display>
   </div>
@@ -21,7 +24,14 @@
       Display,
     },
     setup() {
+      /** @constant {Array} notes Array of notes */
       const notes = ref([]);
+
+      /**
+       * @description Adds a note.
+       * @param {String} title Title of the note.
+       * @param {String} text Text of the note.
+       */
       const addNote = (title, text) => {
         if (title && text) {
           notes.value.push({
@@ -31,9 +41,17 @@
         } 
       };
 
+      /**
+       * @description Removes all existing notes.
+       */
+      const wipe = () => {
+        notes.value = [];
+      }
+
       return { 
         notes, 
-        addNote 
+        addNote,
+        wipe 
       };
     }
   }

@@ -27,6 +27,12 @@
           >
             JOT DOWN
           </button>
+          <button
+            @click.prevent="$emit('wipe')"
+            class="btn btn-danger mx-2"
+          >
+            WIPE
+          </button>
         </form>
       </div>
     </div>

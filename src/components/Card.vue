@@ -9,6 +9,7 @@
           src="./../assets/x.svg" 
           alt="close icon"
           @click="$emit('remove')"
+          class="icon"
         >
       </div>
       <div class="card-body">
@@ -29,5 +30,9 @@
 <style scoped>
   .card-width {
     width: 100%;
+  }
+
+  .icon {
+    cursor: pointer;
   }
 </style>

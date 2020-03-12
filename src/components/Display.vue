@@ -27,17 +27,18 @@
         required: true
       }
     },
-    methods: {
+    setup(props) {
       /**
        * @description Remove a card.
        * @param {Number} index Index of the card in the cards array.
-       * NOTE: modifying props is considered an anti-pattern in Vue.
-       * As this is a tiny project with learning purposes only, 
-       * that's the justification for this procedure.
        */
-      remove(index) {
-        this.notes.splice(index, 1);
-      }
+      const remove = (index) => {
+        props.notes.splice(index, 1);
+      };
+
+      return {
+        remove
+      };
     }
   }
 </script>
