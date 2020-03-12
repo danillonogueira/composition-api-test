@@ -1,8 +1,8 @@
 <template>
   <div class="container-fluid p-0">
     <div class="row">
-      <card 
-        v-for="(note, index) in notes" 
+      <card
+        v-for="(note, index) in notes"
         :key="index + 1"
         v-on:remove="remove(index)"
       >
@@ -38,5 +38,5 @@
 
       return { remove };
     }
-  }
+  };
 </script>

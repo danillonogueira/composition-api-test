@@ -5,25 +5,25 @@
         <form>
           <div class="form-group">
             <label>Title</label>
-            <input 
-              v-model="form.title" 
-              type="text" 
-              class="form-control" 
+            <input
+              v-model="form.title"
+              type="text"
+              class="form-control"
             />
             <small class="form-text text-muted">Every good note gotta have a big nice title, aye?</small>
           </div>
           <div class="form-group">
             <label>Note</label>
-            <textarea 
-              v-model="form.text" 
-              class="form-control" 
+            <textarea
+              v-model="form.text"
+              class="form-control"
               rows="4"
             ></textarea>
             <small class="form-text text-muted">Every good note gotta have the note itself, ammmk?!</small>
           </div>
-          <button 
+          <button
             class="btn btn-primary"
-            @click.prevent="addNote(form.title, form.text)" 
+            @click.prevent="addNote(form.title, form.text)"
           >
             JOT DOWN
           </button>
@@ -62,5 +62,5 @@
 
       return { form };
     }
-  }
+  };
 </script>

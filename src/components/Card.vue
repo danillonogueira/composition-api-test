@@ -5,8 +5,8 @@
         <h5 class="card-title m-0">
           <slot name="title"></slot>
         </h5>
-        <img 
-          src="./../assets/x.svg" 
+        <img
+          src="./../assets/x.svg"
           alt="close icon"
           @click="$emit('remove')"
           class="icon"
@@ -24,7 +24,7 @@
 <script>
   export default {
     name: 'card'
-  }
+  };
 </script>
 
 <style scoped>
