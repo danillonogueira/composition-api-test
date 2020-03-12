@@ -22,14 +22,14 @@
             <small class="form-text text-muted">Every good note gotta have the note itself, ammmk?!</small>
           </div>
           <button 
-            @click.prevent="addNote(form.title, form.text)" 
             class="btn btn-primary"
+            @click.prevent="addNote(form.title, form.text)" 
           >
             JOT DOWN
           </button>
           <button
-            @click.prevent="$emit('wipe')"
             class="btn btn-danger mx-2"
+            @click.prevent="$emit('wipe')"
           >
             WIPE
           </button>
@@ -51,8 +51,12 @@
       }
     },
     setup() {
+      /** @constant {Object} form Envelops models of the form inputs */
       const form = reactive({
+        /** @property {String} title Model for the title input */
         title: '',
+
+        /** @property {String} title Model for the text input */
         text: ''
       });
 

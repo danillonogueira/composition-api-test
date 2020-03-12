@@ -36,9 +36,7 @@
         props.notes.splice(index, 1);
       };
 
-      return {
-        remove
-      };
+      return { remove };
     }
   }
 </script>
