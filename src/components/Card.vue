@@ -10,7 +10,7 @@
           alt="close icon"
           @click="$emit('remove')"
           class="icon"
-        >
+        />
       </div>
       <div class="card-body">
         <p class="card-text">
